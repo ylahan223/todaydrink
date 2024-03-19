@@ -74,7 +74,7 @@ export default function MobileWineList() {
             filteredItems.map((item) => {
               return (
                 <li>
-                  <Link to={`/product/${item.id}`}>
+                  <Link to={`/wine/${item.id}`}>
                     <p className={Style.m_product_img}><img src={item.image} alt="와인" /></p>
                     <p className={Style.m_product_en_name}>{item.enName}</p>
                     <p className={Style.m_product_ko_name}>{item.koName}</p>

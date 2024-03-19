@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Style from './Components/ProductDetail/css/MobileDetail.module.css'
 import { Link, useParams } from 'react-router-dom'
+import { getProductDetail, getProducts } from '../api/firebase'
+import useProduct from './Hooks/MobileUseProduct'
 
 export default function MobileWineInfo() {
+
+  // const {wineId} = useParams()
+
+  // const [allProducts]=useProduct()
+
+  // const selectedItem = allProducts.find((item)=>(item.id)===wineId)
+
+  // const [selectedItem, setSelectedItem] = useState({})
+
+  // useEffect(()=>{
+  //   getProductDetail(wineId).then((res)=>{
+  //           setSelectedItem(res)
+  //       })
+  // }, [wineId])
+
+  
   return (
     <>
       <section className={Style.list_banner}>
