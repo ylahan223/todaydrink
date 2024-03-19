@@ -29,7 +29,7 @@ export default function MobileWineInfo() {
       </section>
 
 
-      <section className={Style.product}>
+      {/* <section className={Style.product}>
         <h2 className="hidden">상세페이지</h2>
         <div className={Style.product_info_wrap}>
           <div className={Style.product_info_img}><img src={selectedItem?.image} alt="바론 데 발스 레드" /></div>
@@ -79,7 +79,7 @@ export default function MobileWineInfo() {
           </div>
           <Link to={"/wine"}><button className={Style.back_btn}>목록으로 돌아가기</button></Link>
         </div>
-      </section>
+      </section> */}
 
 
 
