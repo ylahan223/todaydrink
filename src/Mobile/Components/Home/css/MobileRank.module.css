@@ -1,0 +1,88 @@
+/* 모바일 랭크 */
+section.m_rank {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+div.m_rank_img_wrap {
+    width: 150px;
+    height: 300px;
+    position: relative;
+    left: 5%;
+    top: 0;
+}
+
+ul.m_rank_img_list {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+ul.m_rank_img_list>li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ul.m_rank_img_list>li>a>img {
+    width: 100%;
+}
+
+div.m_rank_text_wrap {
+    width: 52%;
+    height: 200px;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+div.m_rank_num {
+    width: 150px;
+    height: 80px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+div.m_rank_num>p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.m_rank_num>p>span {
+    font-size: 60px;
+    margin: 0 4px;
+}
+
+button.m_rank_btn {
+    position: absolute;
+    font-size: 20px;
+    top: 35%;
+}
+
+button.prev_btn {
+    left: 0;
+}
+
+button.next_btn {
+    right: 0;
+}
+
+p.m_rank_name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p.m_rank_text {
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 8px;
+}

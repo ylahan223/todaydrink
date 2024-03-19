@@ -1,0 +1,53 @@
+/* 모바일 배너 */
+section.m_banner {
+    width: 100%;
+    height: 700px;
+    padding-bottom: 40px;
+}
+
+div.m_top_banner {
+    width: 100%;
+    height: 336px;
+    background: url(/mobile/images/banner0.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+div.m_middle_banner {
+    width: 100%;
+    height: 168px;
+    background: url(/mobile/images/banner1.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: 8px;
+}
+
+div.m_bottom_banner {
+    margin-top: 8px;
+    width: 100%;
+    height: 168px;
+    background: url(/mobile/images/banner2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+@media (orientation: landscape) {
+	/* Landscape 모드일 때 적용할 CSS */
+    section.m_banner {
+        width: 100%;
+        height: auto;
+    }
+    
+    div.m_top_banner {
+        width: 100%;
+        height: 550px;
+    }
+    
+    div.m_middle_banner {
+        width: 100%;
+        height: 300px;
+    }
+    
+    div.m_bottom_banner {
+        margin-top: 8px;
+        width: 100%;
+        height: 300px;
+    }
+}

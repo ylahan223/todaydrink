@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*기본 설정*/
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'pretendard';
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  font-family: 'jalnan';
+  margin-bottom: 80px;
+}
+
+h2.mobile {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'jalnan';
+  margin-bottom: 60px;
+}
+
+.sec {
+  width: 1200px;
+  padding-bottom: 160px;
+  margin: 0 auto;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.is-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.is-grid {
+  display: grid;
+}
+
+/*스킵메뉴*/
+ul#skipmenu_list li a:focus {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  z-index: 9999999;
+}
+
+
+@media screen and (max-width:1200px) {
+  .sec {
+    width: 100%;
+    min-width: 768px;
+  }
+
+  h2.mobile {
+    font-size: 24px; 
+    text-align: center;
+    font-family: 'jalnan';
+    margin-bottom: 60px;
+  }
+}

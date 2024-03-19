@@ -1,0 +1,10 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyB7OSWiR6nSn2Ye5DVdzoL4PFSkEIOVYSY",
+  authDomain: "todaydrink-73970.firebaseapp.com",
+  databaseURL: "https://todaydrink-73970-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "todaydrink-73970",
+  storageBucket: "todaydrink-73970.appspot.com",
+  messagingSenderId: "1028012559592",
+  appId: "1:1028012559592:web:5df66c86852e9b066a4d5d",
+  measurementId: "G-155LYQY0XD"
+};

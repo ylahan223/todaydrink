@@ -1,0 +1,76 @@
+/* 모바일 레시피 */
+section.m_recipe {
+    width: 100%;
+    height: auto;
+    background-color: #FF7008;
+    padding: 40px 0;
+}
+
+section.m_recipe>h2 {
+    color: white;
+}
+
+div.m_recipe_inner {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul.m_recipe_list {
+    width: 100%;
+    height: 100%;
+}
+
+ul.m_recipe_list>li:first-child {
+    margin-right: 3%;
+}
+
+p.m_recipe_img {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+p.m_recipe_img>img {
+    width: 100%;
+}
+
+p.m_recipe_title {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+p.m_recipe_nicname {
+    color: white;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+p.m_recipe_nicname::before {
+    font-weight: 200;
+    content: '@';
+    margin-right: 4px;
+}
+
+div.m_recipe_mark {
+    color: white;
+    font-weight: 300;
+    /* width: 49%; */
+    width: 80px;
+    margin-top: 8px;
+}
+
+div.m_recipe_mark_inner {
+    font-size: 12px;
+}
+
+button.heart_btn,
+button.bookmark_btn {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 12px;
+    margin-right: 0px;
+    margin-left: -5px;
+}
