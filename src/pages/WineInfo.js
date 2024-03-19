@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Style from '../Components/ProductDetail/css/WineInfo.module.css'
 import { Link, useParams } from 'react-router-dom'
-import useProduct from '../Hooks/useProduct'
+// import useProduct from '../Hooks/useProduct'
 import { getProductDetail } from '../api/firebase'
 
 export default function ProductDetail() {

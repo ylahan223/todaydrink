@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import Style from './Components/ProductDetail/css/MobileDetail.module.css'
-import { Link, useParams } from 'react-router-dom'
-import { getProductDetail, getProducts } from '../api/firebase'
-import useProduct from './Hooks/MobileUseProduct'
+import { Link } from 'react-router-dom'
+// import { getProductDetail, getProducts } from '../api/firebase'
+// import useProduct from './Hooks/MobileUseProduct'
 
 export default function MobileWineInfo() {
 

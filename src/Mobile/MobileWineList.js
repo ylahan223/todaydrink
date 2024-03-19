@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Style from './Components/Product/css/MobileWine.module.css'
 import { Link } from 'react-router-dom'
 import useProduct from '../Hooks/useProduct'
-import axios from 'axios'
 
 export default function MobileWineList() {
 
