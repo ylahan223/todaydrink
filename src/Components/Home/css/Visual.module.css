@@ -3,7 +3,7 @@ section.visual{
     height: 550px;
     position: relative;
     left: 0;
-    top: 0;
+    top: 80px;
 }
 ul.visual_list{
     position: relative;

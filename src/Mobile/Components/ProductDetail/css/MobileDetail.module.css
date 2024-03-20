@@ -12,3 +12,144 @@ section.list_banner>p{
     text-align: center;
     margin-top: 8px;
 }
+
+
+section.product{
+    width: 100%;
+    height: auto;
+}
+div.product_info_wrap{
+    width: 88%;
+    height: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #727272;
+}
+div.product_info_img{
+    width: 58%;
+    margin: 0 auto;
+}
+div.product_info_img>img{
+    width: 100%;
+}
+p.product_info_en_name{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+p.product_info_en_name>button{
+    font-size: 20px;
+}
+p.product_info_ko_name{
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: 200;
+}
+p.product_info_text{
+    width: 100%;
+    height: auto;
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 200;
+}
+div.product_kind{
+    width: 100%;
+    height: auto;
+}
+ul.product_kind_list{
+    width: 100%;
+    height: 100%;
+}
+ul.product_kind_list>li{
+    width: 100%;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+ul.product_kind_list>li>span{
+    width: 30%;
+    display: inline-block;
+}
+
+div.product_detail{
+    width: 88%;
+    height: auto;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+ul.product_detail_list{
+    width: 100%;
+    height: 100%;
+}
+ul.product_detail_list>li>span{
+    width: 30%;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+ul.product_detail_list>li{
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+ul.palette_list{
+    margin-top: 20px;
+    width: 100%;
+    height: 360px;
+}
+ul.palette_list>li{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 24px;
+}
+ul.palette_list>li>span{
+    font-size: 12px;
+    color: #666;
+    margin-left: 4px;
+}
+div.palette_bar{
+    width: 100%;
+    height: 6px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+div.palette_bar>span.palette_gauge{
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: #ff7008;
+    border-radius: 8px;
+}
+.lv2{
+    margin-left: 20%;
+}
+.lv4{
+    margin-left: 60%;
+}
+
+div.product_sum_up{
+    width: 100%;
+    height: 100px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+div.product_sum_up>p{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+div.product_sum_up>p>span{
+    font-weight: 600;
+}
+button.back_btn{
+    width: 170px;
+    border: 1px solid #444;
+    border-radius: 40px;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+}

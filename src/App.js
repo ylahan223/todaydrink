@@ -25,7 +25,7 @@ function App() {
         children: [
           {index:true, element :<MobileHome/>},
           {path: '/wine', element:<MobileWineList/>},
-          {path: '/wine/:windId', element:<MobileWineInfo/>}
+          {path: '/wine/:wineId', element:<MobileWineInfo/>}
         ]
         
       }

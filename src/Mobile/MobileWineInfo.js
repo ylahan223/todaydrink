@@ -1,18 +1,32 @@
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
 import Style from './Components/ProductDetail/css/MobileDetail.module.css'
-import { Link } from 'react-router-dom'
-// import { getProductDetail, getProducts } from '../api/firebase'
-// import useProduct from './Hooks/MobileUseProduct'
+import { Link, useParams } from 'react-router-dom'
+import { getProductDetail, getProducts } from '../api/firebase'
+import useProduct from './Hooks/MobileUseProduct'
 
 export default function MobileWineInfo() {
 
-  // const {wineId} = useParams()
+  const { wineId } = useParams()
 
-  // const [allProducts]=useProduct()
-
-  // const selectedItem = allProducts.find((item)=>(item.id)===wineId)
+  const [allProducts] = useProduct()
 
   // const [selectedItem, setSelectedItem] = useState({})
+
+  //console.log("all", allProducts)
+
+  const selectedItem = getSelectedItem(allProducts, wineId)
+
+
+
+
+  function getSelectedItem(product, id){
+    return(
+      product.find((item)=>(item.id===id))
+    )
+  }
+
+
+ // console.log("test", selectedItem)
 
   // useEffect(()=>{
   //   getProductDetail(wineId).then((res)=>{
@@ -20,7 +34,39 @@ export default function MobileWineInfo() {
   //       })
   // }, [wineId])
 
-  
+
+
+  // const { wineId } = useParams()
+
+  // const [allProducts] = useProduct()
+
+  // const selectedItem = allProducts.find((item)=>(item.id)===wineId)
+
+  // const selectedItem = getSelectItem(allProducts, wineId)
+
+  // const [selectedItem, setSelectedItem] = useState({})
+
+  // useEffect(() => {
+  //   getProductDetail(wineId).then((res) => {
+  //     setSelectedItem(res)
+  //   })
+  // }, [wineId])
+
+  //   const [allProducts] = useProducts()
+  // //menuItem을 params로 id값 가져오기
+
+  // const selectProduct=getSelectItems(allProducts, menuItem)
+
+  // function getSelectItem(allProducts, wineId) {
+  //   return (
+  //     allProducts.find((item) => (item.id === wineId))
+  //   )
+  // }
+
+
+  window.scrollTo(0, 0)
+
+
   return (
     <>
       <section className={Style.list_banner}>
@@ -29,7 +75,7 @@ export default function MobileWineInfo() {
       </section>
 
 
-      {/* <section className={Style.product}>
+      <section className={Style.product}>
         <h2 className="hidden">상세페이지</h2>
         <div className={Style.product_info_wrap}>
           <div className={Style.product_info_img}><img src={selectedItem?.image} alt="바론 데 발스 레드" /></div>
@@ -79,7 +125,7 @@ export default function MobileWineInfo() {
           </div>
           <Link to={"/wine"}><button className={Style.back_btn}>목록으로 돌아가기</button></Link>
         </div>
-      </section> */}
+      </section>
 
 
 

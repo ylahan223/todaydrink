@@ -21,6 +21,7 @@ export default function ProductDetail() {
             setSelectedItem(res)
         })
   }, [wineId])
+  window.scrollTo(0,0)
 
 
 
