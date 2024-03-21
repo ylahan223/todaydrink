@@ -1,0 +1,47 @@
+#m_rank_swiper .swiper-button-prev, #m_rank_swiper .swiper-button-next{
+    --swiper-navigation-size:20px !important;
+    top: 27%;
+    --swiper-theme-color:black;
+
+}
+
+#m_rank_swiper .swiper-button-prev{
+    left: 30%;
+}
+#m_rank_swiper .swiper-button-next{
+    right: 27%;
+}
+#m_rank_swiper{
+    height: 100%;
+}
+
+@media (orientation: portrait) {
+	/* Portrait 모드일 때 적용할 CSS */
+    #m_rank_swiper .swiper-button-prev{
+        left: 41%;
+    }
+    #m_rank_swiper .swiper-button-next{
+        right:10%;
+    }
+}
+
+
+/* div#category_swiper {
+    width: 100%;
+    overflow:visible !important;
+}
+
+
+div#category_swiper .swiper-button-prev {
+    left: -30px !important;
+    color: black;
+    z-index: 2;
+    top: 45%;
+    --swiper-navigation-size:24px;
+}
+div#category_swiper .swiper-button-next{
+    color: black;
+    right: -30px;
+    top: 45%;
+    --swiper-navigation-size:24px;
+} */

@@ -102,7 +102,6 @@ ul#skipmenu_list li a:focus {
 .swiper-pagination-bullet-active {
   background-color: #FF7008 !important;
 }
-/* 카테고리 화살표  */
 
 @media screen and (max-width:1200px) {
   .sec {

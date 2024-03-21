@@ -3,8 +3,11 @@ import Style from './Components/Product/css/MobileWine.module.css'
 import { Link } from 'react-router-dom'
 import useProduct from '../Hooks/useProduct'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/free-mode';
 import 'swiper/css';
 import './css/MobileSwiper.css'
+import { FreeMode, Pagination } from 'swiper/modules';
+
 
 export default function MobileWineList() {
 
@@ -46,6 +49,8 @@ export default function MobileWineList() {
       <Swiper
         slidesPerView={'auto'}
         spaceBetween={8}
+        freeMode={true}
+        modules={[FreeMode]}
         id='m_category_swiper'
         className="mySwiper"
       >
@@ -55,7 +60,7 @@ export default function MobileWineList() {
                 <SwiperSlide className={item === selectedCategory && Style.selected} onClick={() => {
                   changeCategory(item)
                 }}>
-                  {item}
+                  <div className={Style.category_li}>{item}</div>
                 </SwiperSlide>
               )
             })

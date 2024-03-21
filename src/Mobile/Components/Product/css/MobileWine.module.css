@@ -14,7 +14,7 @@ section.list_banner>p{
 }
 
 nav.m_category{
-    width: 680px;
+    width: 100%;
     height: 30px;
     padding: 20px;
 }
@@ -38,8 +38,9 @@ ul.m_category_list>li{
     padding: 0 16px;
     width: auto !important;
 } */
+
 .selected{
-    border: none;
+    border: none !important;
     background-color: #ff7008;
     color: white;
 }
@@ -97,7 +98,8 @@ ul.m_page_num_list>li{
     color: #aaa;
 }
 ul.m_page_num_list>li.selected{
-    color: black;
+    color: black ;
+    background:none;
 }
 div.m_page_btn{
     width: 100%;
