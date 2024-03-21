@@ -75,7 +75,7 @@ export default function Header() {
                         <ul className={Style.submenu_list} ref={(el)=>(subMenu.current[item.index]=el)}>
                           {
                             item.subMenuList.map((item) => (
-                              <li>{item.name}</li>
+                              <li><Link to={item.pathname}>{item.name}</Link></li>
                             ))
                           }
                         </ul>

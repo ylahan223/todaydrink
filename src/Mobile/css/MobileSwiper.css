@@ -1,0 +1,8 @@
+#m_category_swiper .swiper-slide{
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 0 16px;
+    width: auto ;
+}

@@ -4,7 +4,8 @@ import Style from './css/Rank.module.css'
 export default function Rank() {
   return (
     <>
-        <section className={`${Style.ranking} sec`}>
+
+<section className={`${Style.ranking} sec`}>
         <h2>이번주 그대들의 PICK</h2>
 
         <div className={Style.ranking_inner}>
@@ -15,8 +16,8 @@ export default function Rank() {
                 <li><a href="#;"><img src="/images/rank3.png" alt="4위"/></a></li>
                 <li><a href="#;"><img src="/images/rank4.png" alt="5위"/></a></li>
             </ul>
-        </div>
-        <div className={Style.ranking_text_wrap}>
+
+            <div className={Style.ranking_text_wrap}>
             <div className={Style.rank_num}>
               <p><span>1</span>위</p>
               <button className={`${Style.rank_btn} ${Style.rank_prev_btn}`}><i className="fa-solid fa-chevron-left"></i></button>
@@ -84,7 +85,9 @@ export default function Rank() {
               </li>
             </ul>
         </div>
+        </div>
+        
     </section>
-    </>
-  )
-}
+ </>       
+ )
+ }

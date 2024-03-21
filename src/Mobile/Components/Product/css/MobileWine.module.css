@@ -30,8 +30,15 @@ ul.m_category_list>li{
     padding: 0 16px;
 }
 
-
-ul.m_category_list li.selected{
+/* #m_category_swiper .swiper-slide{
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 0 16px;
+    width: auto !important;
+} */
+.selected{
     border: none;
     background-color: #ff7008;
     color: white;

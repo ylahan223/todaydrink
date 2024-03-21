@@ -1,52 +1,62 @@
+#Visual {
+    height: 100%;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #FF7008;
+}
+
 /*visual*/
-section.visual{
-    height: 550px;
+section.visual {
+    /* height: 550px; */
     position: relative;
     left: 0;
     top: 80px;
 }
-ul.visual_list{
-    position: relative;
-    top: 0;
-    left: 0;
+section.visual img{
     width: 100%;
-    height: auto;
-}
-ul.visual_list>li{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-ul.visual_list>li>a>img{
-    width: 100%;
-    display: block;
-}
-div.dot{
-    width: 90px;
-    height: 15px;
-    position: absolute;
-    top: 510px;
-    left: 50%;
-    margin-left: -45px;
-}
-ul.dot_list{
-    width: 90px;
-    height: 15px;
-}
-ul.dot_list li{
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-ul.dot_list li.selected{
-    background-color: #FF7008;
 }
 
 @media screen and (max-width:1200px) {
-    section.visual{
+    section.visual {
         width: 95%;
     }
-  }
+}

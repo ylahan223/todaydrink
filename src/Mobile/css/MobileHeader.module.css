@@ -7,13 +7,15 @@ header.mobile{
     top: 0;
 }
 header.mobile>h1{
+    width:140px;
+    height: 40px;
     text-align: center;
     box-sizing: border-box;
     position: relative;
     top: 8px;
-    left: 0;
-    padding-left: 6px;
-    /* z-index: 3; */
+    left: 50%;
+    margin-left: -70px;
+    z-index: 1;
 }
 div.header_inner{
     margin: 0 auto;
@@ -38,13 +40,13 @@ nav.mobile{
     top: 0;
     z-index: 10;
     /* overflow: scroll; */
-    background:url(/images/m_logo.png) no-repeat center 2%, linear-gradient(to bottom, rgba(255,112,8,1) 0%,rgba(255,112,8,1)70px,rgba(255,255,255,1) 70px,rgba(255,255,255,1) 100%);
+    background:url(/images/m_logo.png) no-repeat center 9px, linear-gradient(to bottom, rgba(255,112,8,1) 0%,rgba(255,112,8,1)70px,rgba(255,255,255,1) 70px,rgba(255,255,255,1) 100%);
 }
 
 button.close_btn{
     font-size: 30px;
     color: white;
-    position: fixed;
+    position: absolute;
     top: 17px;
     left: 2%;
 }

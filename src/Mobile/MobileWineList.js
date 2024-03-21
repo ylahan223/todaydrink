@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Style from './Components/Product/css/MobileWine.module.css'
 import { Link } from 'react-router-dom'
 import useProduct from '../Hooks/useProduct'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import './css/MobileSwiper.css'
 
 export default function MobileWineList() {
 
@@ -40,9 +43,27 @@ export default function MobileWineList() {
       </section>
       <nav className={Style.m_category}>
         <h2 className='hidden'>와인메뉴</h2>
-        <ul className={`${Style.m_category_list} is-flex`}>
-
+      <Swiper
+        slidesPerView={'auto'}
+        spaceBetween={8}
+        id='m_category_swiper'
+        className="mySwiper"
+      >
           {
+            initCategory.map((item) => {
+              return (
+                <SwiperSlide className={item === selectedCategory && Style.selected} onClick={() => {
+                  changeCategory(item)
+                }}>
+                  {item}
+                </SwiperSlide>
+              )
+            })
+          }
+      </Swiper>
+        {/* <ul className={`${Style.m_category_list} is-flex`}> */}
+
+          {/* {
             initCategory.map((item) => {
               return (
                 <li className={item === selectedCategory && Style.selected} onClick={() => {
@@ -52,7 +73,7 @@ export default function MobileWineList() {
                 </li>
               )
             })
-          }
+          } */}
 
           {/* <li className={Style.selected}>전체</li>
         <li>레드 와인</li>
@@ -62,7 +83,7 @@ export default function MobileWineList() {
         <li>포트 와인</li>
         <li>내추럴 와인</li> */}
 
-        </ul>
+        {/* </ul> */}
       </nav>
 
       <section className={Style.m_product}>

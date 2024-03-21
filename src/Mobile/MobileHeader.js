@@ -7,7 +7,7 @@ export default function MobileHeader() {
 
   const mainMenuList = [ // 메뉴구조를 서브메뉴와 함께 배열 객체로 적용 
     {
-      index: 0, name: '주류정보', pathname: '/', subMenuList: [
+      index: 0, name: '주류정보', pathname: '', subMenuList: [
         { index: 0, name: '소주', pathname: '/' },
         { index: 1, name: '맥주', pathname: '/' },
         { index: 2, name: '와인', pathname: '/wine' },
@@ -18,45 +18,48 @@ export default function MobileHeader() {
         { index: 7, name: '기타', pathname: '/' }]
     },
     {
-      index: 1, name: '신제품 모아보기', pathname: '/', subMenuList: []
+      index: 1, name: '신제품 모아보기', pathname: '', subMenuList: []
     },
     {
-      index: 2, name: '그대들의 레시피', pathname: '/', subMenuList: [
+      index: 2, name: '그대들의 레시피', pathname: '', subMenuList: [
         { index: 0, name: '안주 조합 추천', pathname: '/' },
         { index: 1, name: '그대만의 레시피', pathname: '/' }]
     },
     {
-      index: 3, name: 'TIP', pathname: '/', subMenuList: []
+      index: 3, name: 'TIP', pathname: '', subMenuList: []
     }
   ]
   const mainmenu = useRef()
   const openBtn = useRef()
   const closeBtn = useRef()
-  const logo = useRef()
 
-  const [selectedIndex, setSelectedIndex] = useState()
+  const [selectedIndex, setSelectedIndex] = useState(null)
 
-  useEffect(()=>{
-    mainmenu.current.style.left='-100vw'
-    mainmenu.current.style.display='none'
-  })
-  
-  const menuOpen=()=>{
-    gsap.set('body,html',{overflow:'hidden'})
-    mainmenu.current.style.display='block'
-    gsap.to(mainmenu.current, {left:0})
+  useEffect(() => {
+    mainmenu.current.style.left = '-100vw'
+    mainmenu.current.style.display = 'none'
+  },[])
+
+  const menuOpen = () => {
+    gsap.set('body,html', { overflow: 'hidden' })
+    mainmenu.current.style.display = 'block'
+    gsap.to(mainmenu.current, { left: 0, duration:0.3 })
   }
-  const menuClose=()=>{
-    gsap.to(mainmenu.current, {left:'-100vw', onComplete:()=>{
-      gsap.set('body,html',{overflow:'visible'})
-      mainmenu.current.style.display='none'
-      
-    }})
+  const menuClose = () => {
+    gsap.to(mainmenu.current, {
+      left: '-100vw', duration:.2,onComplete: () => {
+        gsap.set('body,html', { overflow: 'visible' })
+        mainmenu.current.style.display = 'none'
+
+      }
+    })
   }
 
   const menuActivateIndex = (index) => {
     setSelectedIndex(index)
   }
+
+  console.log(selectedIndex)
 
 
   return (
@@ -71,8 +74,8 @@ export default function MobileHeader() {
           {
             mainMenuList.map((item) => {
               return (
-                <li className={item.index === selectedIndex && Style.selected} style={item.index === selectedIndex ? { height: 70 + (50 * item.subMenuList.length) } : { height: 70 }} onClick={() => {
-                  menuActivateIndex(item.index)
+                <li style={item.index === selectedIndex ? { height: 70 + (50 * item.subMenuList.length) } : { height: 70 }} onClick={() => {
+                  menuActivateIndex(item.index !== selectedIndex ? item.index : null)
                 }}>
                   {item.subMenuList.length < 1 ?
                     <>
@@ -85,7 +88,10 @@ export default function MobileHeader() {
                       <ul className={Style.submenu_list}>
                         {
                           item.subMenuList.map((item) => (
-                            <li>{item.name}</li>
+                            <li onClick={()=>{
+                              menuClose()
+                              menuActivateIndex(null)
+                            }}><Link to={item.pathname}>{item.name}</Link></li>
                           ))
                         }
                       </ul>
@@ -95,6 +101,11 @@ export default function MobileHeader() {
               )
             })
           }
+
+
+
+
+
 
 
 
@@ -119,7 +130,10 @@ export default function MobileHeader() {
           </li>
           <li><a href="#;">TIP</a></li> */}
         </ul>
-        <button className={Style.close_btn} ref={closeBtn} onClick={menuClose}><i className="fa-solid fa-xmark"></i></button>
+        <button className={Style.close_btn} ref={closeBtn} onClick={() => {
+          menuClose()
+          menuActivateIndex(null)
+        }}><i className="fa-solid fa-xmark"></i></button>
       </nav>
     </header>
   )
