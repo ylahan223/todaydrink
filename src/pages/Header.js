@@ -7,7 +7,7 @@ export default function Header() {
   const mainMenuList = [ // 메뉴구조를 서브메뉴와 함께 배열 객체로 적용 
     {
       index: 0, name: '주류정보', pathname: '/', subMenuList: [
-        { index: 0, name: '소주', pathname: '/' },
+        { index: 0, name: '소주', pathname: '/soju' },
         { index: 1, name: '맥주', pathname: '/' },
         { index: 2, name: '와인', pathname: '/wine' },
         { index: 3, name: '양주', pathname: '/' },
@@ -17,7 +17,7 @@ export default function Header() {
         { index: 7, name: '기타', pathname: '/' }]
     },
     {
-      index: 1, name: '신제품 모아보기', pathname: '/', subMenuList: []
+      index: 1, name: '새소식', pathname: '/', subMenuList: []
     },
     {
       index: 2, name: '그대들의 레시피', pathname: '/', subMenuList: [

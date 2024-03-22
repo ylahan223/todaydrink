@@ -1,13 +1,14 @@
 section.banner{
     width: 100%;
     height: 270px;
-    background: linear-gradient(to bottom, rgba(235,236,255,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to bottom, #EDFFDE 0%,rgba(255,255,255,0) 100%);
     padding-top: 120px;
     box-sizing: border-box;
     position: relative;
     top: 80px;
     left: 0;
 }
+
 section.banner>h2{
     margin-bottom: 12px;
 }
@@ -17,7 +18,7 @@ section.banner>p{
 
 
 nav.category{
-    width: 860px;
+    width: 300px;
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 160px;
@@ -37,27 +38,8 @@ ul.category_list li.selected{
 
 ul.product_list{
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
-/* ul.product_list>li{
-    margin-bottom: 120px;
-}
-p.product_img>img{
-    width: 100%;
-}
-p.product_en_name{
-    text-align: center;
-    font-size: 1em;
-    font-weight: 500;
-    margin-top: 30px;
-    line-height: 150%;
-}
-p.product_ko_name{
-    text-align: center;
-    font-size: 0.875em;
-    margin-top: 4px;
-} */
-
 
 div.page_num{
  width: 300px;   
@@ -98,14 +80,11 @@ div.page_btn>button:hover{
 }
 
 
-@media screen and (max-width:1100px) {
-    nav.category{
-        width: 85%;
-    }
-  }
-
   
 @media screen and (max-width:900px) {
+    nav.category{
+        width: 240px;
+    }
     ul.category_list>li{
         height: 30px;
         padding: 0 16px;

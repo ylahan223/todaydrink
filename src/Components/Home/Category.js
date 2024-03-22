@@ -21,11 +21,11 @@ export default function Category() {
                         navigation={true}
                         modules={[Navigation]}
                     >
-                        <SwiperSlide>
+                        <SwiperSlide><Link to='/soju'>
                             <div className={Style.category_box}>
                                 <p className={`${Style.category_img} ${Style.gn}`} ><img src="/images/soju.png" alt="소주" /></p>
                                 <p className={Style.category_title}>소주</p>
-                            </div>
+                            </div></Link>
                         </SwiperSlide>
                         <SwiperSlide>
                         <div className={Style.category_box}>
@@ -64,8 +64,10 @@ export default function Category() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
+                        <div className={Style.category_box}>
                         <p className={`${Style.category_img} ${Style.pu}`}><img src="/images/guitar.png" alt="기타" /></p>
                         <p className={Style.category_title}>기타</p>
+                        </div>
                         </SwiperSlide>
 
                     </Swiper>
