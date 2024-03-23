@@ -8,10 +8,12 @@ export default function MobileCategory() {
             <h2 className="mobile">오늘 그대의 기분은?</h2>
             <div className={Style.m_category_inner}>
                 <ul className={`${Style.m_category_list} is-grid`}>
-                    <li><a href="#;">
+                    <li>
+                        <Link to={`/soju/`}>
                         <p className={`${Style.m_category_img} ${Style.gn}`}><img src="/images/soju.png" alt="소주" /></p>
                         <p className={Style.m_category_title}>소주</p>
-                    </a></li>
+                        </Link>
+                    </li>
                     <li><a href="#;">
                         <p className={`${Style.m_category_img} ${Style.ye}`} ><img src="/images/beer.png" alt="맥주" /></p>
                         <p className={Style.m_category_title}>맥주</p>

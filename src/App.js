@@ -12,7 +12,9 @@ import WineInfo from './pages/WineInfo';
 import SojuInfo from './pages/SojuInfo';
 import MobileHome from './Mobile/MobileHome';
 import MobileWineList from './Mobile/MobileWineList';
+import MobileSojuList from './Mobile/MobileSojuList';
 import MobileWineInfo from './Mobile/MobileWineInfo';
+import MobileSojuInfo from './Mobile/MobileSojuInfo';
 
 function App() {
 
@@ -27,7 +29,9 @@ function App() {
         children: [
           { index: true, element: <MobileHome /> },
           { path: '/wine', element: <MobileWineList /> },
-          { path: '/wine/:wineId', element: <MobileWineInfo /> }
+          { path: '/wine/:wineId', element: <MobileWineInfo /> },
+          { path: '/soju', element: <MobileSojuList /> },
+          { path: '/soju/:sojuId', element: <MobileSojuInfo /> }
         ]
 
       }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Style from './Components/Product/css/MobileWine.module.css'
+import Style from './Components/Product/css/MobileSoju.module.css'
 import { Link } from 'react-router-dom'
-import useProduct from '../Hooks/useProduct'
+import useProduct from './Hooks/MobileSojuUseProduct'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/free-mode';
 import 'swiper/css';
@@ -12,7 +12,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 export default function MobileWineList() {
 
   const initCategory = [
-    "전체", "레드 와인", "화이트 와인", "스파클링 와인", "로제 와인", "포트 와인", "내추럴 와인"
+    "전체", "증류식", "희석식"
   ]
 
   const [selectedCategory, setSelectedCategory] = useState('전체')
@@ -36,16 +36,17 @@ export default function MobileWineList() {
       )
     }
   }
+  window.scrollTo(0, 0)
 
 
   return (
     <>
       <section className={Style.list_banner}>
-        <h2>와인</h2>
-        <p>WINE</p>
+      <h2>소주</h2>
+      <p>SOJU</p>
       </section>
       <nav className={Style.m_category}>
-        <h2 className='hidden'>와인메뉴</h2>
+        <h2 className='hidden'>소주메뉴</h2>
       <Swiper
         slidesPerView={'auto'}
         spaceBetween={8}
@@ -99,8 +100,8 @@ export default function MobileWineList() {
             filteredItems.map((item) => {
               return (
                 <li>
-                  <Link to={`/wine/${item.id}`}>
-                    <p className={Style.m_product_img}><img src={item.image} alt="와인" /></p>
+                  <Link to={`/soju/${item.id}`}>
+                    <p className={Style.m_product_img}><img src={item.image} alt="소주" /></p>
                     <p className={Style.m_product_en_name}>{item.enName}</p>
                     <p className={Style.m_product_ko_name}>{item.koName}</p>
                   </Link>
