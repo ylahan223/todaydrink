@@ -9,13 +9,59 @@ section.ranking{
 div.ranking_inner {
     width: 1200px;
     height: 700px;
-    position: relative;
+    margin: 0 auto;
+    padding-right: 24px;
+    box-sizing: border-box;
+    /* position: relative;
     left: 50%;
     margin-left: -600px;
-    top: 0;
+    top: 0; */
+}
+p.rank_img{
+    width: 300px;
+    height: 600px;
+    float: left;
+    margin-left: 28%;
+}
+p.rank_num{
+    margin-left: 5%;
+    margin-top: 240px;
+    font-size: 32px;
+    font-weight: bold;
+}
+p.rank_num>span{
+    margin-right: 8px;
+    margin-left: 8px;
+    font-size: 100px;
+}
+p.rank_name{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+p.rank_text{
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 16px;
+    font-weight: 600;
 }
 
-ul.ranking_list {
+ul.rank_kind_list{
+    width: 100%;
+    margin-top: 16px;
+}
+ul.rank_kind_list>li {
+    font-size: 14px;
+    line-height: 150%;
+    /* font-weight: 200; */
+}
+
+ul.rank_kind_list>li>span {
+    display: inline-block;
+    width: 100px;
+} 
+
+/* ul.ranking_list {
     width: 100%;
     height: 600px;
     position: relative;
@@ -106,12 +152,12 @@ ul.rank_kind_list>li {
     font-size: 14px;
     line-height: 150%;
     /* font-weight: 200; */
-}
+/* }
 
 ul.rank_kind_list>li>span {
     display: inline-block;
     width: 20%;
-}
+} */ 
 
 
 
@@ -121,7 +167,10 @@ ul.rank_kind_list>li>span {
         width: 100%;
         min-width: 768px;
     }
-    div.ranking_text_wrap{
-        left: 10%;
+    p.rank_img{
+        margin-left: 24%;
     }
+    /* div.ranking_text_wrap{
+        left: 10%;
+    } */
 }

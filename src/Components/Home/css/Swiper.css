@@ -17,6 +17,26 @@ div#category_swiper .swiper-button-next{
     top: 45%;
     --swiper-navigation-size:24px;
 }
+#rank_swiper .swiper-button-prev{
+    left: 11%;
+    color: black;
+    --swiper-navigation-size:30px;
+}
+#rank_swiper .swiper-button-next{
+    right: 11%;
+    color: black;
+    --swiper-navigation-size:30px;
+}
+
+@media screen and (max-width:1000px) {
+    #rank_swiper .swiper-button-prev{
+        left: 6%;
+    }
+    #rank_swiper .swiper-button-next{
+        right: 6%;
+    }
+    
+}
 
 /* .swiper-button-prev,
 .swiper-button-next {
